@@ -1,5 +1,155 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  max-inline-size: 375px;
+  margin: 0 auto;
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  font-style: normal;
+  background-image: var(--bg-image-theme);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header__rec {
+  position: absolute;
+  color: var(--nav-color);
+  line-height: 25px;
+  text-transform: uppercase;
+  inset-inline-end: calc(var(--main-padding) + 28px);
+  inset-block-start: calc(var(--main-padding) + 2px);
+}
+.header__rec::after {
+  content: "";
+  position: absolute;
+  inline-size: 10px;
+  block-size: 10px;
+  margin: -5px -20px 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--nav-color);
+  background-color: var(--nav-color);
+  inset-inline-end: 0;
+  inset-block-start: 50%;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--nav-color);
+  border-block-start: 1px solid var(--nav-color);
+  inset-inline-end: var(--main-padding);
+  inset-block-start: var(--main-padding);
+}
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--nav-color);
+  border-block-end: 1px solid var(--nav-color);
+  inset-inline-start: var(--main-padding);
+  inset-block-end: var(--main-padding);
+}
+
+.header {
+  position: relative;
+  block-size: 100vh;
+  min-block-size: 668px;
+  padding: var(--main-padding);
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr; /* сделали гридом */
+}
+
+.header__theme-menu {
+  align-self: center;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  /* отступ между кнопками */
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  color: var(--nav-color);
+  background-color: transparent;
+  border: 0;
+  line-height: var(--nav-line-height);
+  padding: 0px 13px;
+  text-transform: lowercase;
+  block-size: 26px;
+}
+.header__theme-menu-button_active {
+  /*Рамка появлятся в нажатом состоянии*/
+  border: 1px solid var(--nav-color);
+}
+
+.header__description {
+  max-inline-size: 355px; /* этот блок не должен тянуться */
+  align-self: center;
+  justify-self: end;
+}
+
+.article__title {
+  background-color: var(--accent-color);
+  color: var(--color-title-text);
+  font-weight: 400;
+  font-size: var(--main-font-size);
+}
+
+.title-decor {
+  /* класс для стилизации всех загаловков */
+  background-color: var(--accent-color);
+  color: var(--color-title-text);
+  font-weight: var(--title-font-weight);
+  font-size: var(--main-font-size);
+}
+
+.main-title-decor {
+  /* класс для стилизации главного загаловка */
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--main-color-title-text);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 82.5%;
+}
+
+.content {
+  margin-block-start: 40px; /* будем менять в адаптиве */
+  display: grid;
+  gap: 50px; /* будем менять в адаптиве */
+  background-color: var(--bg-content);
+  padding: 0px var(--main-padding); /* будем менять в адаптиве */
+}
+
+.accent-title {
+  color: var(--accent-color);
+  font-size: var(--main-font-size);
+  font-weight: var(--title-font-weight);
+}
+.article__title {
+  margin-block-end: 10px;
+}
+
+.article__text {
+  color: var(--color-text);
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+}
+
+.section__list {
+  display: grid;
+  gap: 20px;
+}
+
+.section {
+  /* будем менять в адаптиве */
+  display: grid;
+  gap: 20px;
 }

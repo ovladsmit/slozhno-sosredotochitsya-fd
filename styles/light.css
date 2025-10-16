@@ -5,8 +5,23 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image-theme: url("../images/cover-image-light.png");
+  --accent-color:#FF8DCB;
+  --nav-color:#353430;
+  --color-title-text: #353430;
+  --color-text: #353430;
+  --main-color-title-text: #FFC2E6;
+  --bg-content: #FFF1F7;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image-theme: url("../images/cover-image-light.png");/*стили для режима auto, если у кого-нибудь светлая тема*/
+    --accent-color:#FF8DCB;
+    --nav-color:#353430;
+    --color-title-text: #353430;
+    --color-text: #353430;
+    --main-color-title-text: #FFC2E6;
+    --bg-content: #FFF1F7;
+  }
 }
