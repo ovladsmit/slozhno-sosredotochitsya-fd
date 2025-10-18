@@ -87,17 +87,18 @@
 }
 .header__theme-menu-button_active {
   /*Рамка появлятся в нажатом состоянии*/
-  border: 1px solid var(--nav-color);
+  outline: 1px solid var(--nav-color);
   pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--nav-color-hover);
+  outline: 1px solid var(--nav-color-hover);
 }
-
+.header__theme-menu-button:focus {
+  outline: 0;
+}
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--nav-color);
-  outline: 0;
 }
 
 .header__description {
@@ -121,10 +122,12 @@
 .article__text_link:hover {
   border-bottom: 1px solid var(--color-text);
 }
+.article__text_link:focus {
+  outline: 0;
+}
 
 .article__text_link:focus-visible {
-  border: 1px solid var(--color-text);
-  outline: 0;
+  outline: 1px solid var(--color-text);
 }
 
 .title-decor {
