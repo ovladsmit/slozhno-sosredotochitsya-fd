@@ -107,6 +107,7 @@
 }
 
 .article__title {
+  margin-block-end: 10px;
   color: var(--color-title-text);
   font-weight: 400;
   font-size: var(--main-font-size);
@@ -155,9 +156,6 @@
   font-weight: var(--title-font-weight);
   font-size: var(--main-font-size);
 }
-.article__title {
-  margin-block-end: 10px;
-}
 
 .article__text {
   color: var(--color-text);
@@ -204,7 +202,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media (width > 375px) {
+@media (width >= 375px) {
   /* общий адаптив */
   .content {
     gap: 80px;
@@ -279,7 +277,7 @@
   }
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   /* адаптив шапки */
   .header {
     max-block-size: 768px;
