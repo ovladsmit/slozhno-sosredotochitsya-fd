@@ -8,10 +8,12 @@
   --bg-image-theme: url("../images/cover-image-light.png");
   --accent-color:#FF8DCB;
   --nav-color:#353430;
+  --nav-color-hover: rgba(50, 49, 45, 0.40);
   --color-title-text: #353430;
   --color-text: #353430;
   --main-color-title-text: #FFC2E6;
   --bg-content: #FFF1F7;
+  --header-rec-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,9 +21,12 @@
     --bg-image-theme: url("../images/cover-image-light.png");/*стили для режима auto, если у кого-нибудь светлая тема*/
     --accent-color:#FF8DCB;
     --nav-color:#353430;
+    --nav-color-hover: rgba(50, 49, 45, 0.40);
     --color-title-text: #353430;
     --color-text: #353430;
     --main-color-title-text: #FFC2E6;
     --bg-content: #FFF1F7;
+    --header-rec-color: transparent;
   }
+ 
 }
