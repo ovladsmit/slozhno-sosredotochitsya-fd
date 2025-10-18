@@ -19,7 +19,7 @@
   --block-padding: 40px;
 }
 
-@media (width >= 375px) {
+@media (width > 375px) {
   :root {
     --main-padding: 20px;
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);

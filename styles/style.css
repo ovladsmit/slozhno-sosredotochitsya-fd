@@ -202,7 +202,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media (width >= 375px) {
+@media (width > 375px) {
   /* общий адаптив */
   .content {
     gap: 80px;
@@ -277,7 +277,7 @@
   }
 }
 
-@media (width >= 768px) {
+@media (width > 768px) {
   /* адаптив шапки */
   .header {
     max-block-size: 768px;
