@@ -1,33 +1,28 @@
-:root{
+:root {
   --bg-image-theme: url("../images/cover-image-dark.png");
-  --main-font-family: IBM Plex Mono, sans-serif ;
-  --main-font-weight: 400 ;
+  --main-font-family: IBM Plex Mono, sans-serif;
+  --main-font-weight: 400;
   --main-font-size: 18px;
   --main-line-height: 23.4px;
-  --nav-color:#FF0070;
+  --nav-color: #ff0070;
   --nav-line-height: 18px;
-  --nav-color-hover: rgba(255, 0, 112, 0.40);
+  --nav-color-hover: rgba(255, 0, 112, 0.4);
   --main-padding: 10px;
-  --accent-color:#FF0070;
+  --accent-color: #ff0070;
   --color-title-text: #000028;
-  --title-font-weight:700;
+  --title-font-weight: 700;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --color-text:#F1B2CE;
-  --main-color-title-text:#DB00FF;
+  --color-text: #f1b2ce;
+  --main-color-title-text: #db00ff;
   --bg-content: #000028;
-  --header-rec-color: #FF0070;
+  --header-rec-color: #ff0070;
   --block-padding: 40px;
-  
-  
-  
 }
 
 @media (width >= 375px) {
-  :root{
-    --main-padding:20px;
-    --title-font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --block-padding:60px;
-    
+  :root {
+    --main-padding: 20px;
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --block-padding: 60px;
   }
-  
 }

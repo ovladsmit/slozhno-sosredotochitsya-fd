@@ -6,27 +6,26 @@
 
 :root.theme-light {
   --bg-image-theme: url("../images/cover-image-light.png");
-  --accent-color:#FF8DCB;
-  --nav-color:#353430;
-  --nav-color-hover: rgba(50, 49, 45, 0.40);
+  --accent-color: #ff8dcb;
+  --nav-color: #353430;
+  --nav-color-hover: rgba(50, 49, 45, 0.4);
   --color-title-text: #353430;
   --color-text: #353430;
-  --main-color-title-text: #FFC2E6;
-  --bg-content: #FFF1F7;
+  --main-color-title-text: #ffc2e6;
+  --bg-content: #fff1f7;
   --header-rec-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image-theme: url("../images/cover-image-light.png");/*стили для режима auto, если у кого-нибудь светлая тема*/
-    --accent-color:#FF8DCB;
-    --nav-color:#353430;
-    --nav-color-hover: rgba(50, 49, 45, 0.40);
+    --bg-image-theme: url("../images/cover-image-light.png");
+    --accent-color: #ff8dcb;
+    --nav-color: #353430;
+    --nav-color-hover: rgba(50, 49, 45, 0.4);
     --color-title-text: #353430;
     --color-text: #353430;
-    --main-color-title-text: #FFC2E6;
-    --bg-content: #FFF1F7;
-    --header-rec-color: transparent;
+    --main-color-title-text: #ffc2e6;
+    --bg-content: #fff1f7;
+    --header-rec-color: transparent; /*стили для режима auto, если у кого-нибудь светлая тема*/
   }
- 
 }
