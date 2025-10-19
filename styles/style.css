@@ -1,16 +1,15 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   margin: 0 auto;
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   font-style: normal;
+  background-color: var(--bg-content);
   background-image: var(--bg-image-theme);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; /* исправленно*/
 }
 
 .header__rec {
@@ -106,9 +105,12 @@
   align-self: center;
   inline-size: 100%;
 }
+.article {
+  display: grid;
+  gap: 10px;
+}
 
 .article__title {
-  margin-block-end: 10px;
   color: var(--color-title-text);
   font-weight: 400;
   font-size: var(--main-font-size);
@@ -150,12 +152,11 @@
   display: grid;
   gap: 50px; /* будем менять в адаптиве */
   padding: var(--block-padding) var(--main-padding); /* будем менять в адаптиве */
-  line-height: var(--main-line-height);
-  background-color: var(--bg-content);
+  line-height: var(--main-line-height); /* исправленно*/
 }
 
 .accent-title {
-  color: var(--accent-color);
+  color: var(--accent-title-color);
   font-weight: var(--title-font-weight);
   font-size: var(--main-font-size);
 }
@@ -196,16 +197,16 @@
   justify-content: center;
   align-items: center;
   padding: var(--main-padding);
-  background-color: var(--bg-content);
   block-size: 100vh;
-  max-block-size: 667px;
+  min-block-size: 668px; /* исправленно*/
 }
 
 .footer__title.main-title-decor {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media (width > 375px) {
+@media (width > 700px) {
+  /* исправленно*/
   /* общий адаптив */
   .content {
     gap: 80px;
@@ -213,7 +214,7 @@
   /* адаптив шапки */
   .header {
     grid-template-columns: 1fr 1fr;
-    max-block-size: 1024px;
+    min-block-size: 668px; /* исправленно*/
   }
   .header__title {
     grid-column: span 2;
@@ -276,14 +277,14 @@
   }
   /* footer */
   .footer {
-    max-block-size: 1024px;
+    min-block-size: 668px; /* исправленно*/
   }
 }
 
-@media (width > 768px) {
+@media (width > 1000px) {
   /* адаптив шапки */
   .header {
-    max-block-size: 768px;
+    min-block-size: 668px; /* исправленно*/
   }
   .header__theme-menu {
     grid-column: span 2;
@@ -293,13 +294,21 @@
   .header__theme-menu-list {
     flex-direction: row;
   }
+  /* section 1 */
+  .section.problem {
+    grid-template-columns: 1fr 2.06fr; /* исправленно*/
+  }
   /* section 2 */
   .section__list.causes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  /* section 3 */
+  .section.solution {
+    grid-template-columns: 1fr 2.06fr; /* исправленно*/
+  }
   /* footer */
   .footer {
-    max-block-size: 768px;
-  }
+    min-block-size: 668px; /* исправленно*/
+  } /* исправленно*/
 }

@@ -14,12 +14,14 @@
   --main-color-title-text: #ffc2e6;
   --bg-content: #fff1f7;
   --header-rec-color: transparent;
+  --accent-title-color:#353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image-theme: url("../images/cover-image-light.png");
     --accent-color: #ff8dcb;
+    --accent-title-color:#353430;
     --nav-color: #353430;
     --nav-color-hover: rgba(50, 49, 45, 0.4);
     --color-title-text: #353430;
