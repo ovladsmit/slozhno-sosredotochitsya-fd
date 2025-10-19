@@ -205,6 +205,11 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.section__title-additional {
+  display: grid;
+  gap: 20px;
+}
+
 @media (width > 700px) {
   /* исправленно*/
   /* общий адаптив */
